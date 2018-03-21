@@ -5,10 +5,12 @@
 #ifndef MARKOS_MAIN_RECIVIER_H
 #define MARKOS_MAIN_RECIVIER_H
 
-#include "Message.h"
+
+#include <types.h>
 
 namespace mark_os {
     namespace communication {
+        template<typename Message>
         class Receiver {
             virtual Message receive(uint8 channelId)= 0;
         };

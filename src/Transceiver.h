@@ -5,10 +5,11 @@
 #ifndef MARKOS_MAIN_TRANSMITTER_H
 #define MARKOS_MAIN_TRANSMITTER_H
 
-#include "Message.h"
+#include <types.h>
 
 namespace mark_os {
     namespace communication {
+        template<typename Message>
         class Transceiver {
         public:
             virtual void send(uint8 channelId, Message &message)= 0;
