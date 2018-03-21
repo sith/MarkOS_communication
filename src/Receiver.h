@@ -12,6 +12,7 @@ namespace mark_os {
     namespace communication {
         template<typename Message>
         class Receiver {
+        public:
             virtual Message receive(uint8 channelId)= 0;
         };
     }

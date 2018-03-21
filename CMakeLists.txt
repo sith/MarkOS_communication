@@ -7,3 +7,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC src)
 
 target_link_libraries(${PROJECT_NAME} MarkOS_commons)
 
+install(DIRECTORY "src/"
+        DESTINATION "/Users/oleksandrabaukh/workspace/MarkOS/communication")
