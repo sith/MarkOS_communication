@@ -7,13 +7,16 @@
 
 
 #include <types.h>
+#include "Message.h"
 
 namespace mark_os {
     namespace communication {
-        template<typename Message>
+        template<typename Content>
         class Receiver {
         public:
-            virtual Message receive(uint8 channelId)= 0;
+            virtual Message<Content> receive()= 0;
+
+            virtual bool available()= 0;
         };
     }
 }

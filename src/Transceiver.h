@@ -6,13 +6,14 @@
 #define MARKOS_MAIN_TRANSMITTER_H
 
 #include <types.h>
+#include "Message.h"
 
 namespace mark_os {
     namespace communication {
-        template<typename Message>
+        template<typename Content>
         class Transceiver {
         public:
-            virtual void send(uint8 channelId, Message &message)= 0;
+            virtual void send(Message<Content> &message)= 0;
         };
     }
 }
