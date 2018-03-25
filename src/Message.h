@@ -9,9 +9,12 @@
 
 template<typename Content>
 struct Message {
+    uint16 signature = version;
     uint8 from = 0;
     uint8 to = 0;
     Content content;
+
+    static const uint16 version = 12496;
 
     Message() = default;
 

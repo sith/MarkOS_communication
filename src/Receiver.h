@@ -7,6 +7,7 @@
 
 
 #include <types.h>
+#include <util/Optional.h>
 #include "Message.h"
 
 namespace mark_os {
@@ -14,9 +15,7 @@ namespace mark_os {
         template<typename Content>
         class Receiver {
         public:
-            virtual Message<Content> receive()= 0;
-
-            virtual bool available()= 0;
+            virtual commons::Optional<Message<Content>> receive()= 0;
         };
     }
 }
