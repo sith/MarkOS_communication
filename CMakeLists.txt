@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 project(MarkOS_communication)
 
-add_library(${PROJECT_NAME} src/Transceiver.h src/Receiver.h src/main.cpp src/Message.h)
+add_library(${PROJECT_NAME}
+        src/Transceiver.h
+        src/Transceiver.cpp
+        src/Receiver.h
+        src/Receiver.cpp
+        src/Message.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC src)
 
