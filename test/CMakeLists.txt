@@ -1,7 +1,7 @@
 
 add_executable(communication_tests
         main.cpp
-        TransceiverWithRetriesTest.cpp TransceiverWithRetriesTest.h)
+        TransceiverWithRetriesTest.cpp TransceiverWithRetriesTest.h SequenceAwareTransceiverTest.cpp SequenceAwareTransceiverTest.h)
 
 #Link with GoogleTest
 target_link_libraries(communication_tests gtest gtest_main)
