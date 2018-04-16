@@ -8,7 +8,7 @@ add_library(${PROJECT_NAME}
         src/TransceiverWithRetries.cpp
         src/Receiver.h
         src/Receiver.cpp
-        src/Message.h src/SequenceAwareTransciever.cpp src/SequenceAwareTransciever.h)
+        src/Message.h src/SequenceAwareTransciever.cpp src/SequenceAwareTransciever.h src/SequenceAwareReceiver.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC src)
 
